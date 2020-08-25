@@ -1,8 +1,35 @@
-docs_list_title: Fernando Caldeira
+docs_list_title: primus list
 docs:
 
-- title: Introduction
+- title: home
   url: index
+
+- title: empresa
+  url: empresa
+
+- title: green
+  url: green
+
+- title: products
+  url: products
+
+- title: walls-tiles
+  url: walls-tiles
+
+- title: walls-tiles-two
+  url: walls-tiles-two
+
+- title: floor-tiles
+  url: floor-tiles
+
+- title: logistica
+  url: logistica
+
+- title: reabilitacao
+  url: reabilitacao
+
+- title: reabilitacao-two
+  url: reabilitacao-two
 
 - title: Works
   url: works

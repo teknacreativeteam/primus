@@ -1,0 +1,3 @@
+---
+layout: walls-tiles
+---
