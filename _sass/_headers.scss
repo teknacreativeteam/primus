@@ -1,0 +1,381 @@
+@import "colors";
+@import "typography";
+@import "spacing";
+
+header {
+  background: $c-secondary;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: $space-xl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid $c-neutral2;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.02);
+
+  p {
+    @include display5;
+    color: $c-neutral;
+    margin-left: $space-m;
+    span {
+      display: none;
+
+      @media screen and (min-width: 800px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: $space-m;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    span {
+      @include display5;
+      display: block;
+      width: $space-l;
+      position: relative;
+    }
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: $c-secondary;
+    width: 100%;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 400ms ease-in-out;
+    transition: -webkit-transform 400ms ease-in-out;
+    -o-transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+
+    ul {
+      margin: 0;
+
+      li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @include display4;
+        border-bottom: 1px solid $c-neutral2;
+
+        a {
+          color: $c-neutral;
+          width: 100%;
+          padding: $space-s;
+          opacity: 0;
+          -webkit-transition: opacity 150ms ease-in-out;
+          -o-transition: opacity 150ms ease-in-out;
+          transition: opacity 150ms ease-in-out;
+        }
+
+        @media screen and (min-width: 800px) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    -webkit-transition: opacity 250ms ease-in-out 250ms;
+    -o-transition: opacity 250ms ease-in-out 250ms;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  @media screen and (min-width: 800px) {
+    display: grid;
+    display: -ms-grid;
+    height: $space-xl;
+
+    .nav-title {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2 / 3;
+
+      span {
+        padding-left: $space-ss;
+        display: none;
+        color: $c-neutral2;
+
+        @media screen and (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+
+    nav {
+      all: unset;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      grid-column: 3 / 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin: 0;
+
+        li {
+          @include desktopBody;
+          margin-left: $space-ss;
+          margin-bottom: 0;
+
+          a {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+}
+
+header-two {
+  background: $c-secondary;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: $space-xl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid $c-neutral2;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.02);
+
+  p {
+    @include display5;
+    color: $c-neutral;
+    margin-left: $space-m;
+    span {
+      display: none;
+
+      @media screen and (min-width: 800px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: $space-m;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    span {
+      @include display5;
+      display: block;
+      width: $space-l;
+      position: relative;
+    }
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: $c-secondary;
+    width: 100%;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 400ms ease-in-out;
+    transition: -webkit-transform 400ms ease-in-out;
+    -o-transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+
+    ul {
+      margin: 0;
+
+      li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @include display4;
+        border-bottom: 1px solid $c-neutral2;
+
+        a {
+          color: $c-neutral;
+          width: 100%;
+          padding: $space-s;
+          opacity: 0;
+          -webkit-transition: opacity 150ms ease-in-out;
+          -o-transition: opacity 150ms ease-in-out;
+          transition: opacity 150ms ease-in-out;
+        }
+
+        @media screen and (min-width: 800px) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    -webkit-transition: opacity 250ms ease-in-out 250ms;
+    -o-transition: opacity 250ms ease-in-out 250ms;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  @media screen and (min-width: 800px) {
+    display: grid;
+    display: -ms-grid;
+    height: $space-xl;
+
+    .nav-title {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2 / 3;
+
+      span {
+        padding-left: $space-ss;
+        display: none;
+        color: $c-neutral2;
+
+        @media screen and (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+
+    nav {
+      all: unset;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      grid-column: 3 / 4;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin: 0;
+
+        li {
+          @include desktopBody;
+          margin-left: $space-ss;
+          margin-bottom: 0;
+
+          a {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+}
