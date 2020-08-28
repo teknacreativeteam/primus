@@ -9,7 +9,7 @@
 
 @mixin main-button {
   @include shape-button;
-  background-color: $c-primary;
+  background-color: $c-tertiary;
 }
 
 @mixin second-button {
@@ -21,4 +21,9 @@
 @mixin third-button {
   display: inline-block;
   padding: $space-s 0;
+}
+
+.primary-btn {
+  @include main-button();
+  display: inline;
 }

@@ -6,7 +6,7 @@
 }
 
 @mixin bodyFonts {
-  font-family: "Karla", Helvetica, Arial, sans-serif;
+  font-family: parisplus-std, sans-serif;
 }
 
 @mixin standartBody {
@@ -34,20 +34,20 @@
 }
 
 @mixin displayFonts {
-  font-family: "Gilroy-Bold", Helvetica, Arial, sans-serif;
+  font-family: parisplus-sombre, Helvetica, Arial, sans-serif;
   color: $c-primary;
 }
 
 @mixin display1 {
   @include displayFonts;
-  font-size: 61.04px;
-  line-height: 76px;
+  font-size: 70px;
+  line-height: 90px;
 }
 
 @mixin display2 {
   @include displayFonts;
-  font-size: 48.83px;
-  line-height: 60px;
+  font-size: 70px;
+  line-height: 90px;
 }
 
 @mixin display3 {
@@ -57,7 +57,7 @@
 }
 
 @mixin display3-link {
-  font-family: "Gilroy-Bold", Helvetica, Arial, sans-serif;
+  font-family: parisplus-sombre, sans-serif;
   font-size: 39.06px;
   line-height: 50.8px;
 }
@@ -75,7 +75,7 @@
 }
 
 @mixin display5-link {
-  font-family: "Gilroy-Bold", Helvetica, Arial, sans-serif;
+  font-family: parisplus-sombre, sans-serif;
   font-size: 25px;
   line-height: 30px;
 }

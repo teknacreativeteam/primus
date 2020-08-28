@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fernando Caldeira is a UX/UI Designer focused on innovation.
+title: Primus Vitoria
 email: fernandonunescaldeira@gmail.com
 
 #mudar a description
 description: >- # this means to ignore newlines until "baseurl:"
-  Come here I'm Fernando Caldeira a UX/UI Designer. Problem solver focused on design, technology, and business. Interested in creating solutions impact people's lives.
+  Primus Vitoria Description
 baseurl: "/primus" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  FernandoCaldeira
