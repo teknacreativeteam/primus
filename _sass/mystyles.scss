@@ -150,12 +150,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
    }
-   .banner-content {
+   .cta-contact {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transform: translateY(53%);
    }
  }
 
- 
+
 // Home
 
 .page-home {
@@ -348,8 +353,13 @@ footer {
 }
 
 // Wall Tiles
-//perguntar pedro como vão ser os buttons? e em mobile?
 .page-walls-tiles {
+  .banner-walls-tiles {
+    background-image: url('../assets/img/banner-walls-tiles.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .written-section {
     img {
       width: 60px;
@@ -359,37 +369,171 @@ footer {
 
   .gallery-products {
     ul {
-      display: flex;
       li {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        background: red;
+        background: #fff;
+        @media screen and (min-width: 767px) {
+          flex-direction: row;
+        }
         .wrapper-img {
           width: 100%;
           height: 100%;
-          background: green;
           .list-img {
-            height: 400px;
-            background: blue;
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .img-1 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-1.png');
+          }
+          .img-2 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-2.png');
+          }
+          .img-3 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-3.png');
+          }
+          .img-4 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-4.png');
+          }
+          .img-5 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-5.png');
+          }
+          .img-6 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-6.png');
+          }
+          .img-7 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-7.png');
+          }
+          .img-8 {
+            background-image: url('../assets/img/walls-tiles/walls-tiles-8.png');
           }
         }
-        .cta-text {
+        .cta-wrapper {
           width: 100%;
-          background: purple;
-          i {
-            display: block;
-            height: 1px;
-            background: $c-primary;
-            width: 100%;
+          background: #fff;
+
+          @media screen and (min-width: 767px) {
+            display: flex;
+          
           }
-          & > p {
-            padding: $space-m 0;
+            .icon-wrapper {
+              display: none;
+              @media screen and (min-width: 767px) {
+                display: inline-block;
+                padding: $space-l 0 $space-m;
+              }
+              svg {
+                margin: 0 24px;
+              }
+            }
+            .cta-content {
+              padding: $space-l $space-m;
+              max-width: 400px;
+              i {
+                display: block;
+                height: 1px;
+                background: $c-primary;
+                width: 100%;
+              }
+              & > p {
+                padding: $space-m 0 $space-l;
+              }
+            }
           }
+      }
+
+      .even {
+        background-color: #f2f2f2 !important;
+        @media screen and (min-width: 767px) {
+          flex-direction: row-reverse;
+          
+        }
+      }
+      .list-2, .list-4, .list-6, .list-8 {
+        @media screen and (min-width: 767px) {
+          flex-direction: row-reverse;
+          
         }
       }
     }
   }
 }
+
+// Wall Tiles Two
+.page-walls-tiles-two {
+
+  .banner-walls-tiles-two {
+    background-image: url('../assets/img/banner-walls-tiles-two.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .brilho-cor-formas {
+    background-color: $c-primary;
+    
+    .reflect-part{
+
+      .ul-reflect {
+      display: flex;
+      flex-direction: row;
+        .reflect-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          .reflect-cell {
+            height: $space-m;
+            width: $space-m;
+            border: 1px solid $c-secondary;
+            background-color: #f2f2f2;
+          }
+          .reflect-color-fill {
+            //placeholder
+            background-color: #fff;
+          }
+          
+        }
+      }
+    }
+
+    .color-part {
+    .ul-color {
+      display: flex;
+      flex-direction: row;
+      .cor-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cor-cell {
+          height: $space-m;
+          width: $space-m;
+          border: 1px solid $c-secondary;
+          background-color: #f2f2f2;
+        }
+        .cor-color-fill {
+          //placeholder
+          background-color: #fff;
+        }
+      }
+    }
+
+    }
+
+    .form-part {
+      
+      .ul-form {
+
+      }
+    }
+
+  }
+
+}
+
 
 // Green
 .page-green {

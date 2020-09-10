@@ -136,7 +136,9 @@ footer p { font-size: 13px; text-align: center; padding-top: 24px; padding-botto
 
 .banner-wrapper { background: #34424A; width: 100%; height: 400px; }
 
-.banner-wrapper .banner { height: 100%; display: flex; justify-content: center; align-items: center; }
+.banner-wrapper .banner { height: 100%; display: flex; justify-content: center; align-items: center; position: relative; }
+
+.banner-wrapper .cta-contact { position: absolute; bottom: 0; left: 0; transform: translateY(53%); }
 
 .page-home .intro-banner { background-image: url("../assets/img/home_background_banner.png"); background-size: cover; height: 100vh; }
 
@@ -204,21 +206,75 @@ footer p { font-size: 13px; text-align: center; padding-top: 24px; padding-botto
 
 .products-choice ul li a { height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
+.page-walls-tiles .banner-walls-tiles { background-image: url("../assets/img/banner-walls-tiles.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+
 .page-walls-tiles .written-section img { width: 60px; height: 60px; }
 
-.page-walls-tiles .gallery-products ul { display: flex; }
+.page-walls-tiles .gallery-products ul li { width: 100%; display: flex; flex-direction: column; background: #fff; }
 
-.page-walls-tiles .gallery-products ul li { display: flex; flex-direction: column; background: red; }
+@media screen and (min-width: 767px) { .page-walls-tiles .gallery-products ul li { flex-direction: row; } }
 
-.page-walls-tiles .gallery-products ul li .wrapper-img { width: 100%; height: 100%; background: green; }
+.page-walls-tiles .gallery-products ul li .wrapper-img { width: 100%; height: 100%; }
 
-.page-walls-tiles .gallery-products ul li .wrapper-img .list-img { height: 400px; background: blue; }
+.page-walls-tiles .gallery-products ul li .wrapper-img .list-img { height: 500px; background-size: cover; background-repeat: no-repeat; background-position: center; }
 
-.page-walls-tiles .gallery-products ul li .cta-text { width: 100%; background: purple; }
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-1 { background-image: url("../assets/img/walls-tiles/walls-tiles-1.png"); }
 
-.page-walls-tiles .gallery-products ul li .cta-text i { display: block; height: 1px; background: #34424A; width: 100%; }
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-2 { background-image: url("../assets/img/walls-tiles/walls-tiles-2.png"); }
 
-.page-walls-tiles .gallery-products ul li .cta-text > p { padding: 24px 0; }
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-3 { background-image: url("../assets/img/walls-tiles/walls-tiles-3.png"); }
+
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-4 { background-image: url("../assets/img/walls-tiles/walls-tiles-4.png"); }
+
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-5 { background-image: url("../assets/img/walls-tiles/walls-tiles-5.png"); }
+
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-6 { background-image: url("../assets/img/walls-tiles/walls-tiles-6.png"); }
+
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-7 { background-image: url("../assets/img/walls-tiles/walls-tiles-7.png"); }
+
+.page-walls-tiles .gallery-products ul li .wrapper-img .img-8 { background-image: url("../assets/img/walls-tiles/walls-tiles-8.png"); }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper { width: 100%; background: #fff; }
+
+@media screen and (min-width: 767px) { .page-walls-tiles .gallery-products ul li .cta-wrapper { display: flex; } }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper .icon-wrapper { display: none; }
+
+@media screen and (min-width: 767px) { .page-walls-tiles .gallery-products ul li .cta-wrapper .icon-wrapper { display: inline-block; padding: 48px 0 24px; } }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper .icon-wrapper svg { margin: 0 24px; }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper .cta-content { padding: 48px 24px; max-width: 400px; }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper .cta-content i { display: block; height: 1px; background: #34424A; width: 100%; }
+
+.page-walls-tiles .gallery-products ul li .cta-wrapper .cta-content > p { padding: 24px 0 48px; }
+
+.page-walls-tiles .gallery-products ul .even { background-color: #f2f2f2 !important; }
+
+@media screen and (min-width: 767px) { .page-walls-tiles .gallery-products ul .even { flex-direction: row-reverse; } }
+
+@media screen and (min-width: 767px) { .page-walls-tiles .gallery-products ul .list-2, .page-walls-tiles .gallery-products ul .list-4, .page-walls-tiles .gallery-products ul .list-6, .page-walls-tiles .gallery-products ul .list-8 { flex-direction: row-reverse; } }
+
+.page-walls-tiles-two .banner-walls-tiles-two { background-image: url("../assets/img/banner-walls-tiles-two.png"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.page-walls-tiles-two .brilho-cor-formas { background-color: #34424A; }
+
+.page-walls-tiles-two .brilho-cor-formas .reflect-part .ul-reflect { display: flex; flex-direction: row; }
+
+.page-walls-tiles-two .brilho-cor-formas .reflect-part .ul-reflect .reflect-wrapper { display: flex; flex-direction: column; align-items: center; }
+
+.page-walls-tiles-two .brilho-cor-formas .reflect-part .ul-reflect .reflect-wrapper .reflect-cell { height: 24px; width: 24px; border: 1px solid #74828A; background-color: #f2f2f2; }
+
+.page-walls-tiles-two .brilho-cor-formas .reflect-part .ul-reflect .reflect-wrapper .reflect-color-fill { background-color: #fff; }
+
+.page-walls-tiles-two .brilho-cor-formas .color-part .ul-color { display: flex; flex-direction: row; }
+
+.page-walls-tiles-two .brilho-cor-formas .color-part .ul-color .cor-wrapper { display: flex; flex-direction: column; align-items: center; }
+
+.page-walls-tiles-two .brilho-cor-formas .color-part .ul-color .cor-wrapper .cor-cell { height: 24px; width: 24px; border: 1px solid #74828A; background-color: #f2f2f2; }
+
+.page-walls-tiles-two .brilho-cor-formas .color-part .ul-color .cor-wrapper .cor-color-fill { background-color: #fff; }
 
 .page-green .section-green { padding-bottom: 0; }
 
